@@ -39,11 +39,17 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
-	
+	v = v.replace("1", "๑");
+	v = v.replace("2", "๒");
+	v = v.replace("3", "๓");
+	v = v.replace("4", "๔");
+	v = v.replace("5", "๕");
+	v = v.replace("6", "๖");
+	v = v.replace("7", "๗");
+	v = v.replace("8", "๘");
+	v = v.replace("9", "๙");
+	v = v.replace("0", "๐");
+
 	textNode.nodeValue = v;
 }
 
